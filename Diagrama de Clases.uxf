@@ -1,0 +1,27 @@
+<diagram program="umletino" version="14.4.0-SNAPSHOT"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>30</x><y>10</y><w>100</w><h>30</h></coordinates><panel_attributes>Cuenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>240</x><y>340</y><w>110</w><h>80</h></coordinates><panel_attributes>Billetera
+--
+nombre:string
+saldo:number
+color:string</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>410</x><y>30</y><w>100</w><h>30</h></coordinates><panel_attributes>transaccion</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>590</x><y>0</y><w>100</w><h>30</h></coordinates><panel_attributes>calendario</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>220</x><y>80</y><w>100</w><h>30</h></coordinates><panel_attributes>estadistica</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>510</x><y>350</y><w>150</w><h>60</h></coordinates><panel_attributes>BilleteraCredito
+--
+FechaCierre:Date
+FechaVencimiento:Date</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>340</x><y>350</y><w>190</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+1</panel_attributes><additional_attributes>170;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>500</y><w>280</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+RepositorioBilletera
+--
++crear(billetera:Billetera):void
++buscarUno(id:number):Billetera
++buscarTodo():Billetera[]
++actualizar(id:number,billetera:Billetera):void
++eliminar(id:number):void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>280</x><y>410</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>UMLClass</id><coordinates><x>440</x><y>500</y><w>280</w><h>130</h></coordinates><panel_attributes>&lt;&lt;Interface&gt;&gt;
+RepositorioBilletera
+--
++crear(billetera:Billetera):void
++buscarUno(id:number):Billetera
++buscarTodo():Billetera[]
++actualizar(id:number,billetera:Billetera):void
++eliminar(id:number):void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>400</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;100</additional_attributes></element><element><id>UMLClass</id><coordinates><x>70</x><y>350</y><w>100</w><h>50</h></coordinates><panel_attributes>&lt;&lt;Enum&gt;&gt;
+Icono</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>160</x><y>350</y><w>100</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+1</panel_attributes><additional_attributes>80;20;10;20</additional_attributes></element></diagram>
